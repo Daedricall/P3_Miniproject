@@ -10225,10 +10225,11 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
-  boostMult: 1
+  boostMult: 28
   whatIsBoost:
     serializedVersion: 2
     m_Bits: 128
+  boostCooldown: 1
   whatIsFinishLine:
     serializedVersion: 2
     m_Bits: 0

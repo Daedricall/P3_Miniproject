@@ -25,8 +25,10 @@ public class PlayerMovement : MonoBehaviour
     bool grounded;
 
     [Header("Boost Config")]
-    public float boostMult = 1;
+    public float boostMult;
     public LayerMask whatIsBoost;
+    public float boostCooldown = 1;
+    private float lastBoostTime = 0;
 
     [Header("Finishline Config")]
     public LayerMask whatIsFinishLine;
@@ -173,9 +175,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Boost()
     {
-        if (Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.2f, whatIsBoost))
+        // Check if enough time has passed since the last boost
+        if (Time.time - lastBoostTime >= boostCooldown)
         {
-            rb.AddForce(transform.up * boostMult, ForceMode.Impulse);
+            if (Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.2f, whatIsBoost))
+            {
+                rb.AddForce(transform.up * boostMult, ForceMode.Impulse);
+                lastBoostTime = Time.time;  // Update last boost time
+            }
         }
     }
 
