@@ -81,14 +81,6 @@ public class PlayerMovement : MonoBehaviour
         // Ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.1f, whatIsGround);
 
-        // Declare that when this raycast hits whatIsFinishLine, finish switches to true
-        finished = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.2f, whatIsFinishLine);
-
-        if (finished == true)
-        {
-            Finish();
-        }
-
         MovePlayer();
 
         if (grounded)
@@ -96,11 +88,6 @@ public class PlayerMovement : MonoBehaviour
 
         else
             rb.linearDamping = 0;
-    }
-
-    private void Finish()
-    {
-
     }
 
     private void MyInput()
