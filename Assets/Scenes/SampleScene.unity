@@ -9625,8 +9625,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\t\t\t         Find your way\n\t\t\t\t         to the finishline!\n\n\n\n\nSprint:\t\t\t\t\t\t\t\t\t\tJump:\nLeft
-    Shift\t\t\t\t\t\t\t\t\t\tSpace"
+  m_text: "\t\t\t\t         Find your way\n\t\t\t\t         to the finishline!\n\n\n\n\n\tSprint:\t\t\t\t\t\t\t\tJump:\n\tLeft
+    Shift\t\t\t\t\t\t\t\tSpace"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
