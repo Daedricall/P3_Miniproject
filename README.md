@@ -1,7 +1,8 @@
+# Video Showcase
 [![P3 Miniproject Showcase](https://img.youtube.com/vi/HOy7VU50KGk/0.jpg)](https://youtu.be/HOy7VU50KGk)
 <br/>
 <br/>
-# P3-Miniproject
+# Only Dark!
 **Introduction** <br/>
 This mini project was inspired by ”Only Up!” A game in which your objective is to maneuver through a 3D world, jumping higher and higher until you finally reach the goal. There are no save points, so if you jump and miss a platform, you will fall down and lose a bunch, if not all, of your progress. This type of game has been replicated quite a lot after Only Up!. Other iterations of this gameplay-loop are seen in game like Chained Together which is, in essence, a multiplayer version of Only Up! with the twist of being chained with a group of friends. My twist, is to make the game a first-person game, and to have the world completely dark. However, you have a flashlight, functioning as eyes. This means that you can see a certain distance, and the game is set up so that everything you can see, you can jump to. Encouraging memorization and exploration of the platforms on which you land. <br/>
 <br/>
